@@ -12,11 +12,11 @@ const Banner = () => {
 
     return (
         <div className="mt-5 container max-w-[1440px] mx-auto flex items-center justify-center">
-            <div className="bg-white rounded-tl-xl rounded-bl-xl w-[100%] h-[78.7vh]">
+            <div className="bg-white rounded-tl-xl rounded-bl-xl w-[100%] h-[78.7vh] overflow-hidden">
                 <div className="px-12 flex flex-col justify-center items-center">
                     <div className="py-1 px-5 w-fit mb-14 mt-12 rounded-full border border-[#8459f5]">Software by NFD</div>
 
-                    <h1 className="text-6xl text-center text-gray-700 font-syne font-bold">NFD platform
+                    <h1 className="text-6xl text-center text-gray-700 leading-10 mt-12 font-syne font-bold">NFD platform
                         <br /><br /><span className="text-[#848aff] ">“NFD.gg”</span></h1>
                     <p className="text-xl text-center my-7 text-gray-600 font-semibold">An Alpha community 2.0 with its own platform for participating, searching, and tracking any crypto related information.</p>
                     <div className="flex items-center gap-x-5 justify-between">
@@ -40,8 +40,8 @@ const Banner = () => {
                 </div>
                 <img className="rounded-bl-xl " src="https://i.ibb.co/jLPNRwm/Purple-Ellips.webp" alt="" />
             </div>
-            <div className="bg-black rounded-tr-lg rounded-br-lg w-[100%] h-[78.7vh]">
-                <img src="https://i.ibb.co/kJmLFTN/software-Ellipse.webp" alt="" />
+            <div className="bg-black rounded-tr-lg rounded-br-lg w-[100%] h-[78.7vh] overflow-hidden">
+                <img src="https://i.ibb.co/kJmLFTN/software-Ellipse.webp" alt="" className="-mt-5" />
 
                 <div className="px-12 flex flex-col justify-center items-center">
 
@@ -51,11 +51,11 @@ const Banner = () => {
                     <p className="text-xl text-center my-6 text-gray-600 font-semibold">Handle your crypto-wallets, farm activities and retrodrops on a single app.</p>
                     <div className="flex items-center justify-center my- border-b  border-gray-700">
 
-                        <div onClick={() => setIsTrue(true)} className={` ${isTrue ? 'border-b-2 text-gray-100' : 'text-gray-400'} border-[#8459f5] pb-6 px-20 flex items-center gap-2  text-2xl`}><FaApple></FaApple>
+                        <div onClick={() => setIsTrue(true)} className={` ${isTrue ? 'border-b-2 shadow-[0px_25px_9px_0px_#8459f524] cursor-pointer text-gray-100' : 'text-gray-400'} border-[#8459f5] pb-6 px-20 flex items-center gap-2  text-2xl`}><FaApple></FaApple>
                             <p className="">macOs</p>
                         </div>
-                        <div onClick={() => setIsTrue(false)} className={` px-20 pb-6 ${isTrue ? 'text-gray-400' : 'border-b-2 text-gray-100'} border-[#8459f5] flex items-center gap-2  text-2xl`}><FaWindows></FaWindows>
-                            <p className="">macOs</p>
+                        <div onClick={() => setIsTrue(false)} className={` px-20 cursor-pointer pb-6 ${isTrue ? 'text-gray-400' : 'border-b-2 text-gray-100'} border-[#8459f5] flex items-center gap-2  text-2xl`}><FaWindows></FaWindows>
+                            <p className="">Windows</p>
                         </div>
                     </div>
 
